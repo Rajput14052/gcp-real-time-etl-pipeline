@@ -1,0 +1,7 @@
+CREATE TABLE dataset.users (
+  id INT64,
+  name STRING,
+  age INT64,
+  email STRING
+)
+PARTITION BY DATE(_PARTITIONTIME);
