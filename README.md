@@ -1,4 +1,8 @@
 # 🚀 GCP Real-Time ETL Pipeline
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![GCP](https://img.shields.io/badge/GCP-PubSub%20%7C%20Dataflow%20%7C%20BigQuery-green)
+![Airflow](https://img.shields.io/badge/Orchestration-Airflow-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## 📌 Overview
 This project demonstrates a **real-time data pipeline** built using Google Cloud Platform (GCP) services to process high-volume streaming data efficiently and reliably.
@@ -73,3 +77,14 @@ Source → Pub/Sub → Cloud Function → Dataflow → BigQuery → Power BI
 ---
 
 ## 📂 Project Structure
+```
+gcp-real-time-etl-pipeline/
+│── dags/
+│── dataflow/
+│── cloud_function/
+│── sql/
+│── tests/
+│── sample_data/
+│── images/
+│── README.md
+```
