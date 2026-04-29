@@ -1,5 +1,8 @@
 # GCP Real-Time ETL Pipeline
 
+## Architecture
+![Architecture](images/architecture_diagram.png)
+
 ## Overview
 This project demonstrates a real-time ETL pipeline built using GCP.
 
