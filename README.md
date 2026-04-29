@@ -1,11 +1,14 @@
 # 🚀 GCP Real-Time ETL Pipeline
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![GCP](https://img.shields.io/badge/GCP-PubSub%20%7C%20Dataflow%20%7C%20BigQuery-green)
 ![Airflow](https://img.shields.io/badge/Orchestration-Airflow-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
+---
+
 ## 📌 Overview
-This project demonstrates a scalable and production-ready real-time data pipeline built using Google Cloud Platform (GCP) services
+This project demonstrates a scalable and production-ready real-time data pipeline built using Google Cloud Platform (GCP) services.
 
 ---
 
@@ -20,10 +23,14 @@ Traditional batch processing systems caused delays in data availability, making 
 ---
 
 ## 💡 Solution
-Designed and implemented a **real-time ETL pipeline** using GCP services:
+Designed and implemented a **real-time ETL pipeline** using GCP services.
+
+---
 
 ## 🔁 Architecture Flow
+```
 Source → Pub/Sub → Cloud Function → Dataflow → BigQuery → Power BI
+```
 
 ---
 
@@ -67,8 +74,8 @@ Source → Pub/Sub → Cloud Function → Dataflow → BigQuery → Power BI
 - Reduced manual effort by **60%**  
 - Improved processing performance by **40%**  
 - Reduced BigQuery cost by **35%**  
-- Enabled near real-time analytics
-- Achieved **99.9% pipeline reliability** through orchestration and monitoring
+- Enabled near real-time analytics  
+- Achieved **99.9% pipeline reliability** through orchestration and monitoring  
 
 ---
 
@@ -84,32 +91,13 @@ gcp-real-time-etl-pipeline/
 │── images/
 │── README.md
 ```
+
 ---
+
 ## 🚀 How to Run (Local Simulation)
 
-1. Clone the repo:
-   git clone https://github.com/Rajput14052/gcp-real-time-etl-pipeline.git
-
-2. Navigate:
-   cd gcp-real-time-etl-pipeline
-
-3. Run transformation:
-   python dataflow/pipeline.py
-
-4. Run tests:
-   pytest tests/
-
-## 🔮 Future Improvements
-- Deploy pipeline on actual GCP environment using Pub/Sub and Dataflow jobs  
-- Add CI/CD pipeline using Cloud Build  
-- Integrate monitoring and alerting using Cloud Monitoring  
-- Add support for Kafka-based ingestion
-
-## 📚 Key Learnings
-- Built understanding of real-time streaming pipelines  
-- Learned GCP services integration (Pub/Sub, Dataflow, BigQuery)  
-- Implemented data quality validation using pytest  
-- Gained experience in orchestration using Airflow  
-
-## 👨‍💻 Author
-Rahul Kisan Rajput
+```bash
+git clone https://github.com/Rajput14052/gcp-real-time-etl-pipeline.git
+cd gcp-real-time-etl-pipeline
+python dataflow/pipeline.py
+pytest tests/
