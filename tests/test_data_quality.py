@@ -1,12 +1,18 @@
-def validate(record):
-    if record["age"] < 0:
-        return False
-    if "@" not in record["email"]:
-        return False
-    return True
+from validation.quality_checks import validate_issue_record
 
-def test_valid_data():
-    assert validate({"age":25,"email":"a@gmail.com"}) == True
 
-def test_invalid_data():
-    assert validate({"age":-1,"email":"abc"}) == False
+def test_valid_issue_record():
+    record = {
+        "issue_id": "1001",
+        "key": "PROJ-101",
+        "status": "Done",
+    }
+    assert validate_issue_record(record) == []
+
+
+def test_missing_issue_id():
+    record = {
+        "key": "PROJ-102",
+        "status": "In Progress",
+    }
+    assert "Missing issue_id" in validate_issue_record(record)
